@@ -11,21 +11,24 @@
     height: auto;
 }
 
-.menu nav a {
-    text-decoration: none;
+.menu {
     color: cornflowerblue;
     font-size: 16px;
     line-height: 20px;
 }
 
-h1 {
+a {
+    text-decoration: none;
+}
+
+.title1 {
     color: #222222;
     font-size: 28px;
     line-height: 36px;
     font-weight: bold;
 }
 
-p {
+.paragraph {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -33,7 +36,7 @@ p {
     color: #7D7987;
 }
 
-h2 {
+.title2 {
     color: coral;
     font-style: normal;
     font-weight: 700;
@@ -41,7 +44,7 @@ h2 {
     line-height: 80px;
 }
 
-b {
+.text {
     color: darkgreen;
 }
 
