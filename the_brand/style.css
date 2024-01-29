@@ -17,31 +17,26 @@
     justify-content: space-between;
     height: 75px;
 }
+
 .group1 {
     display: flex;
     gap: 41px;
     align-items: center;
 }
+
 .group2 {
     display: flex;
     align-items: center;
+    gap: 41px;
 }
 
 
 .main_title {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     background: #F1E4E6;
     margin-bottom: 65px;
-}
-
-.main_brand {
-    color: #222;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .the_brand {
@@ -49,6 +44,14 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
+    line-height: normal;
+}
+
+.main_brand {
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
     line-height: normal;
 }
 
@@ -78,40 +81,47 @@
 }
 
 .type1 {
-    background-image: url(img/Group\ 36.svg);
     width: 360px;
     height: 260px;
     fill: rgba(33, 22, 22, 0.70);
+    background-image: url(img/Group\ 36.svg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .type2 {
     background-image: url(img/Group\ 37.svg);
+    background-size: cover;
     width: 360px;
     height: 260px;
     fill: rgba(33, 22, 22, 0.70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .type3 {
     background-image: url(img/Group\ 38.svg);
+    background-size: cover;
     width: 360px;
     height: 260px;
     fill: rgba(33, 22, 22, 0.70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .type4 {
     background-image: url(img/Group\ 39.svg);
+    background-size: cover;
     width: 1140px;
     height: 180px;
     fill: rgba(33, 22, 22, 0.70);
-    margin-bottom: 96px;
-}
-
-.text_in {
-    margin-top: 105px;
-}
-
-.special {
-    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info {
@@ -156,6 +166,22 @@
     margin-bottom: 41px;
 }
 
+.name_item {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about_item {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
 .price {
     color: #F16D7F;
     font-size: 16px;
@@ -171,6 +197,12 @@
     background: #FFF;
     gap: 30px;
     margin-bottom: 48px;
+}
+
+.product_blocks {
+    width: 360px;
+    height: 581px;
+    display: grid;
 }
 
 .image_item {
@@ -189,8 +221,7 @@
 }
 
 .item {
-    display: grid;
-    justify-items: center;
+    display: flex;
 
 }
 
@@ -208,3 +239,96 @@
     cursor: pointer;
 }
 
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .group1 {
+        margin: 0px 16px;
+    }
+
+    .group2 {
+        margin: 0px 16px;
+    }
+
+    .man_image {
+        max-width: 386px;
+        margin-right: 39px;
+    }
+
+    .the_brand {
+        font-size: 44px;
+    }
+
+    .main_brand {
+        font-size: 24px;
+    }
+
+    .fashion {
+        font-size: 24px;
+    }
+
+    .type_product {
+        gap: 20px;
+
+    }
+
+    .type1 {
+        width: 232px;
+        height: 167px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .type2 {
+        width: 232px;
+        height: 167px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .type3 {
+        width: 232px;
+        height: 167px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .type4 {
+        width: 734px;
+        height: 116px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .title_block {
+        margin-top: 109px;
+        margin-bottom: 33px;
+    }
+
+    .title_item {
+        margin-bottom: 3px;
+    }
+
+    .text_items {
+        margin-bottom: 73px;
+    }
+
+    .example_products {
+        gap: 16px;
+    }
+    .all_product{
+        margin-bottom: 70px;
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .center {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
+    }
+}

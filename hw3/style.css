@@ -150,6 +150,43 @@
     padding-bottom: 243px;
 }
 
+.solutions {
+    background: #08101e;
+    display: flex;
+    justify-content: space-between;
+    gap: auto;
+    flex-wrap: wrap;
+    padding-bottom: 243px;
+}
+
+.sol_text {
+    max-width: 548px;
+}
+
+.sol_image {
+    max-width: 573px;
+}
+
+.sol_title {
+    max-width: 548px;
+    color: var(--ffffff, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.text_about_solution {
+    color: var(--ffffff, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    margin-bottom: 20px;
+    max-width: 460px;
+}
+
 @media (max-width: 1024px) {
     .center {
         padding-left: calc(50% - 376px);
@@ -184,7 +221,108 @@
         grid-area: span 1/span 1;
         gap: 30px;
     }
+
     .item_big img {
         max-width: 98px;
+    }
+
+    .solutions {
+        padding-bottom: 120px;
+        gap: 64px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
+    }
+
+    .header {
+        gap: 16px;
+    }
+
+    .header_link {
+        font-size: 14px;
+    }
+
+    .top_info {
+        text-align: center;
+    }
+
+    .subtitle {
+
+        font-size: 14px;
+    }
+
+    .title {
+        margin-top: 16px;
+        margin-bottom: 64px;
+        font-size: 28px;
+        max-width: 343px;
+        line-height: 36px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .image1 {
+        height: 344px;
+    }
+
+    .top_buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 39px;
+        gap: 24px;
+    }
+
+    .top_content {
+        margin-top: 64px;
+    }
+
+    .top_logos {
+        margin: 128px auto 0;
+        flex-direction: column;
+    }
+
+    .loogo1 {
+        align-self: flex-start;
+    }
+
+    .content {
+        grid-template-columns: repeat(1, 362px);
+    }
+
+    .item_big {
+        grid-column: 1;
+        grid-row: 2;
+        gap: 30px;
+    }
+
+    .item_big img {
+        max-width: 98px;
+    }
+
+    .solutions {
+        padding-bottom: 96px;
+        gap: 32px;
+        display: flex;
+        justify-content: center;
+    }
+    .sol_title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .text_about_solution {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .sol_image{
+        max-width: 342px;
     }
 }
