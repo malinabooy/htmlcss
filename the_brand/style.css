@@ -39,6 +39,10 @@
     margin-bottom: 65px;
 }
 
+.block {
+    display: flex;
+}
+
 .the_brand {
     color: #222;
     font-size: 48px;
@@ -148,7 +152,7 @@
     margin-bottom: 60px;
 }
 
-.title_item {
+.title_items {
     color: #222;
     font-size: 30px;
     font-style: normal;
@@ -276,28 +280,28 @@
     }
 
     .type1 {
-        width: 232px;
+        max-width: 232px;
         height: 167px;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
     }
 
     .type2 {
-        width: 232px;
+        max-width: 232px;
         height: 167px;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
     }
 
     .type3 {
-        width: 232px;
+        max-width: 232px;
         height: 167px;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
     }
 
     .type4 {
-        width: 734px;
+        max-width: 734px;
         height: 116px;
         background-position: center;
         background-size: cover;
@@ -319,7 +323,8 @@
     .example_products {
         gap: 16px;
     }
-    .all_product{
+
+    .all_product {
         margin-bottom: 70px;
     }
 }
@@ -328,7 +333,90 @@
 
 @media (max-width:767px) {
     .center {
-        padding-left: calc(50% - 172px);
-        padding-right: calc(50% - 172px);
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
+    }
+    .group1 {
+        margin: 6px;
+    }
+    .group2 {
+        margin: 6px;
+    }
+
+
+    .header_icons3 {
+        display: none;
+    }
+
+    .header_icons2 {
+        display: none;
+    }
+    
+    .man_image {
+        display: none;
+    }
+    .the_brand {
+        font-size: 38px;
+    }
+
+    .main_brand {
+        font-size: 20px;
+    }
+
+    .fashion {
+        font-size: 20px;
+    }
+
+    .main_title {
+        height: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .vertical_icon{
+        height: 61px;
+    }
+    .block {
+        align-items: center;
+    }
+
+    .type_product {
+        gap: 32px;
+        margin: 8px;
+    }
+
+    .type1 {
+        max-width: 343px;
+        height: 248px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .type2 {
+        max-width: 343px;
+        height: 248px;
+        background-position: center;
+        background-size:contain;
+    }
+
+    .type3 {
+        max-width: 343px;
+        height: 248px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .type4 {
+        max-width: 343px;
+        height: 111px;
+        background-position: center;
+        background-size: cover;
+    }
+    .title_block {
+        margin-top: 64px;
+        margin-bottom: 40px;
+    }
+    .text_items {
+        margin-bottom: 64px;
     }
 }
