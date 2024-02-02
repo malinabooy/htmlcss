@@ -1,0 +1,103 @@
+#check {
+    position: absolute;
+    z-index: -1;
+    left: -9999999px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#check+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+#check+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+#check:checked+label::before {
+    border-color: #68e005;
+    background-color: #ef0b0b;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.button {
+    display: block;
+    width: 190px;
+    height: 60px;
+    border: 2px solid palevioletred;
+    text-align: center;
+    line-height: 60px;
+    color: #ef0b0b;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    background-color: #68e005;
+    color: aliceblue;
+}
+
+.car {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ef0b0b;
+    transition: margin 3s;
+}
+
+.drive:hover .car {
+    margin-left: 1000px;
+}
+
+.car1 {
+    transition-timing-function: ease;
+}
+
+.car2 {
+    transition-timing-function: ease-in;
+}
+
+.car3 {
+    transition-timing-function: ease-out;
+}
+.car4 {
+    transition-timing-function: ease-in-out;
+}
+.car1 {
+    transition-timing-function: linear;
+}
+.borditem {
+    width: 250px;
+    height: 100px;
+    border: 1px solid #ef0b0b;
+    transition: transformation 3s;
+}
+
+.bord {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bord_item1:hover {
+    transform: translate(200px,-30px) scale(1.5);
+}
+.bord_item2:hover {
+    transform: translate(-200px,30px) scale(1.5);
+}
+.bord_item3:hover {
+    transform: translate(200px,30px) scale(1.5);
+}

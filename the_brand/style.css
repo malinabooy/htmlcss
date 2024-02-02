@@ -149,7 +149,8 @@
 .title_block {
     display: grid;
     place-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
+    margin-top: 109px;
 }
 
 .title_items {
@@ -243,6 +244,143 @@
     cursor: pointer;
 }
 
+.advantages {
+    min-height: 341px;
+    background-color: #222224;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type_advantages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.block_advantages {
+    max-width: 360px;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.name_advantages {
+    color: #FBFBFB;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text_advantages {
+    color: #FBFBFB;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 448px;
+    background-image: url(img/photo\ subscribe.svg);
+    background-size: cover;
+}
+
+.rewie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+    max-width: 360px;
+    align-items: center;
+}
+
+.text_rewie {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.face {
+    max-width: 96px;
+}
+
+.for_subscribe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 32px;
+
+}
+
+.text_subscribe {
+    color: #222224;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.style_text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form_sub {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.inputs {
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    max-width: 256px;
+    min-width: 245px;
+    height: 49px;
+    padding-left: 22px;
+}
+
+.buttons {
+    background-color: #F16D7F;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    max-width: 100px;
+    min-width: 95px;
+    height: 49px;
+}
+
+.media {
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222224;
+}
+
+.text_brand {
+    font-size: 16px;
+    color: #FBFBFB;
+}
+
+.social_icon {
+    gap: 7px;
+}
+
+
+
 @media (max-width:1024px) {
     .center {
         padding-left: calc(50% - 368px);
@@ -327,6 +465,33 @@
     .all_product {
         margin-bottom: 70px;
     }
+
+    .type_advantages {
+        padding-block: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-size: cover;
+        height: 614px;
+    }
+
+    .rewie {
+        margin-top: 64px;
+    }
+
+    .form_sub {
+        margin-bottom: 140px;
+    }
+
+    .for_subscribe {
+        gap: 27px;
+    }
 }
 
 
@@ -336,9 +501,11 @@
         padding-left: calc(50% - 180px);
         padding-right: calc(50% - 180px);
     }
+
     .group1 {
         margin: 6px;
     }
+
     .group2 {
         margin: 6px;
     }
@@ -351,10 +518,11 @@
     .header_icons2 {
         display: none;
     }
-    
+
     .man_image {
         display: none;
     }
+
     .the_brand {
         font-size: 38px;
     }
@@ -373,9 +541,11 @@
         justify-content: center;
         align-items: center;
     }
-    .vertical_icon{
+
+    .vertical_icon {
         height: 61px;
     }
+
     .block {
         align-items: center;
     }
@@ -396,7 +566,7 @@
         max-width: 343px;
         height: 248px;
         background-position: center;
-        background-size:contain;
+        background-size: contain;
     }
 
     .type3 {
@@ -412,11 +582,52 @@
         background-position: center;
         background-size: cover;
     }
+
     .title_block {
         margin-top: 64px;
         margin-bottom: 40px;
     }
+
     .text_items {
         margin-bottom: 64px;
+    }
+
+    .block_advantages {
+        max-width: 343px;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-size: cover;
+        background-position: -495px 0;
+        height: 609px;
+    }
+
+    .text_subscribe {
+
+        font-size: 14px;
+
+    }
+
+    .rewie {
+        margin-top: 64px;
+    }
+
+    .form_sub {
+        margin-bottom: 110px;
+    }
+
+    .media {
+        height: 143px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .text_brand {
+        margin-bottom: 9px;
     }
 }
