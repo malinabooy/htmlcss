@@ -30,6 +30,9 @@
     gap: 41px;
     position: relative;
 }
+.header_icons1 {
+    cursor: pointer;
+}
 
 .dropdown {
     position: relative;
@@ -282,6 +285,7 @@
     overflow: hidden;
 }
 .add_to_cart_overlay {
+    cursor: pointer;
     position: absolute;
     top: -80px;
     left: 0;
@@ -467,9 +471,11 @@
     gap: 7px;
 }
 .social_icon:hover .white {
+    cursor: pointer;
     fill: #F16D7F;
 }
 .social_icon:hover .black {
+    cursor: pointer;
     fill: #FBFBFB;
 }
 .text_brand {
