@@ -28,7 +28,80 @@
     display: flex;
     align-items: center;
     gap: 41px;
+    position: relative;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop_menu {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 158px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 32px 32px;
+}
+
+.menu {
+    color: #222;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 850;
+    line-height: normal;
+    padding-bottom: 4px;
+}
+
+.main_text_menu {
+    color: #F16D7F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu_links {
+    text-decoration: none;
+    color: #6F6E6E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.menu_block {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.dropdown:hover .drop_menu {
+    display: block;
+}
+
+
+.basket::before {
+    position: absolute;
+    background-color: #F16D7F;
+    color: white;
+    content: "5";
+    top: -8px;
+    right: -10px;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center
+}
+
 
 
 .main_title {
@@ -46,7 +119,6 @@
 .the_brand {
     color: #222;
     font-size: 48px;
-    font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
@@ -54,7 +126,6 @@
 .main_brand {
     color: #222;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
@@ -62,7 +133,6 @@
 .fashion {
     color: #F16D7F;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
@@ -208,8 +278,24 @@
     width: 360px;
     height: 581px;
     display: grid;
+    position: relative;
+    overflow: hidden;
+}
+.add_to_cart_overlay {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/Hover.svg) no-repeat center center;
+    background-size: contain; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
 
+.item:hover .add_to_cart_overlay {
+    opacity: 1; 
+}
 .image_item {
     width: 360px;
     height: 420px;
@@ -242,6 +328,12 @@
     color: #F16D7F;
     text-align: center;
     cursor: pointer;
+}
+.all_product:hover {
+    color: #FFF;
+    background-color: #F16D7F;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
 }
 
 .advantages {
@@ -351,6 +443,7 @@
     padding-left: 22px;
 }
 
+
 .buttons {
     background-color: #F16D7F;
     color: white;
@@ -369,14 +462,19 @@
     align-items: center;
     background-color: #222224;
 }
-
+.social_media {
+    display: flex;
+    gap: 7px;
+}
+.social_icon:hover .white {
+    fill: #F16D7F;
+}
+.social_icon:hover .black {
+    fill: #FBFBFB;
+}
 .text_brand {
     font-size: 16px;
     color: #FBFBFB;
-}
-
-.social_icon {
-    gap: 7px;
 }
 
 
@@ -508,8 +606,11 @@
 
     .group2 {
         margin: 6px;
+        gap:0px;
     }
-
+.drop_menu {
+    right: 0px;
+}
 
     .header_icons3 {
         display: none;
@@ -629,5 +730,9 @@
 
     .text_brand {
         margin-bottom: 9px;
+    }
+
+    .basket::before {
+        content: none;
     }
 }
