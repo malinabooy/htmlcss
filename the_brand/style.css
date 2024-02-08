@@ -161,7 +161,7 @@
     width: 360px;
     height: 260px;
     fill: rgba(33, 22, 22, 0.70);
-    background-image: url(img/Group\ 36.svg);
+    background-image: url(img/Group_36.svg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@
 }
 
 .type2 {
-    background-image: url(img/Group\ 37.svg);
+    background-image: url(img/Group_37.svg);
     background-size: cover;
     width: 360px;
     height: 260px;
@@ -182,7 +182,7 @@
 }
 
 .type3 {
-    background-image: url(img/Group\ 38.svg);
+    background-image: url(img/Group_38.svg);
     background-size: cover;
     width: 360px;
     height: 260px;
@@ -194,7 +194,7 @@
 }
 
 .type4 {
-    background-image: url(img/Group\ 39.svg);
+    background-image: url(img/Group_39.svg);
     background-size: cover;
     width: 1140px;
     height: 180px;
