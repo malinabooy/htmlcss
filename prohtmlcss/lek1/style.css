@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.header {
+  height: 100px;
+  width: 1140px;
+  border: 1px solid #2d68e6;
+}
+
+.top-head_heading {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2d68e6;
+}
+.top-head_heading .breadcrumbs_link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.top-head_heading .breadcrumbs_link_site {
+  font-weight: 700;
+  color: #2d68e6;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+@import 'var';
+@mixin displayFlexSpace ($columnRow, $justPosition){
+    display: flex;
+    flex-direction: $columnRow;
+    align-items: center;
+    justify-content: $justPosition;
+}

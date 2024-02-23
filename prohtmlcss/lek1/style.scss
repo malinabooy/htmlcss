@@ -1,0 +1,35 @@
+$colorSelectSite: #2d68e6;
+$widthSite: 1140px;
+
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - $widthSite/2);
+    padding-right: calc(50% - $widthSite/2);
+}
+.header {
+    height: 100px;
+    width: $widthSite;
+    border: 1px solid #2d68e6;
+}
+.top-head_heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorSelectSite;
+    .breadcrumbs_link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+    
+    .breadcrumbs_link_site {
+        font-weight: 700;
+        color: $colorSelectSite;
+    }
+}
+

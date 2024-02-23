@@ -15,6 +15,7 @@
 
 <body>
     <header class="heading">
+        
         <div class="header_top  center">
             <a href="index.html">
                 <img src="img/Group 19 2.svg" alt="logo" class="header_logo">
@@ -39,19 +40,19 @@
                 <div class="choices">
                     <select class="choices_select" name="location" id="#">
                         <option value="" disabled selected hidden>Локация для тура</option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
+                        <option value="option1">Египет</option>
+                        <option value="option1">Швейцария</option>
+                        <option value="option1">Германия</option>
+                        <option value="option1">США</option>
+                        <option value="option1">Канада</option>
                     </select>
                     <p class="label_text" for="#">выберите из списка</p>
                 </div>
                 <div class="choices_date">
                     <div class="block_date">
                         <label for="date1" class="for_date">
-                            <label class="text_date" for="date1">Дата похода</label>
-                            <input type="date" id="date1" class="datepicker-input">
+                            <label class="text_date" for="datepicker1">Дата похода</label>
+                            <input type="text" id="datepicker1" class="datepicker-input">
                             <img class="date_icon" src="img/formkit_date.svg" alt="">
                         </label>
                     </div>
@@ -60,11 +61,11 @@
                 <div class="choices">
                     <select class="choices_select" name="people" id="#">
                         <option value="" disabled selected hidden>Участники</option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
-                        <option value="option1"></option>
+                        <option value="option1">1-2</option>
+                        <option value="option1">3-4</option>
+                        <option value="option1">5-7</option>
+                        <option value="option1">8-10</option>
+                        <option value="option1">10+</option>
                     </select>
                     <p class="label_text" for="#">минимум 4 человека</p>
                 </div>
@@ -78,12 +79,12 @@
                 <div class="position_image">
                     <img src="img/Rectangle 5 (1).svg" alt="mountains" class="mountains">
                     <div class="video_container">
-                        <video id="my_video" width="350" height="400" autoplay muted class="home_in_mountains"
-                            poster="img/Rectangle 4.svg">
-                            <source src="#" type="video/mp4">
+                        <video loop id="my_video" muted class="home_in_mountains">
+                            <source src="img/vecteezy_natural-landscape-pictures-mountains-and-fog_33856940.mp4"
+                                type="video/mp4">
                         </video>
                         <img class="play-button" src="img/Group 2.svg" alt="Play Button" onclick="playPause()">
-                        <script src="video.js"></script>
+
                     </div>
                 </div>
             </div>
@@ -152,6 +153,10 @@
                 <div class="three_direction">
                     <div class="lake">
                         <img src="img/fon_lake.svg" alt="lake" class="lake_image">
+                        <div class="rang">
+                            <img class="icon_rang" width="17" src="img/Vector (2).svg" alt="zvezda">
+                            <h2 class="numbers_rang">4.9</h2>
+                        </div>
                         <div class="description">
                             <div class="title_block_des">
                                 <div class="block_text_description">
@@ -160,7 +165,6 @@
                                 </div>
                                 <div class="price_description">
                                     <p class="price">480 $</p>
-
                                 </div>
                             </div>
                             <div class="block_hidden">
@@ -177,6 +181,10 @@
                     </div>
                     <div class="night_in_mountains">
                         <img src="img/fon_mount.svg" alt="lake" class="lake_image">
+                        <div class="rang">
+                            <img class="icon_rang" width="17" src="img/Vector (2).svg" alt="zvezda">
+                            <h2 class="numbers_rang">4.5</h2>
+                        </div>
                         <div class="description">
                             <div class="title_block_des">
                                 <div class="block_text_description">
@@ -202,6 +210,10 @@
                     </div>
                     <div class="yoga_in_mountains">
                         <img src="img/fon_yoga.svg" alt="lake" class="lake_image">
+                        <div class="rang">
+                            <img class="icon_rang" width="17" src="img/Vector (2).svg" alt="zvezda">
+                            <h2 class="numbers_rang">5.0</h2>
+                        </div>
                         <div class="description">
                             <div class="title_block_des">
                                 <div class="block_text_description">
@@ -229,6 +241,7 @@
             </div>
             <button class="rang_direction">Рейтинг направлений</button>
         </div>
+
     </section>
     <section class="section_impressions">
         <div class="block_impressions center">
@@ -238,7 +251,11 @@
             </div>
             <article class="share_impressions">
                 <div class="container_impressions">
-                    <img width="230" height="280" src="img/Rectangle 19.svg" alt="image_impressions" class="image_impressions">
+                    <a href="#">
+                        <img width="230" height="280" src="img/Rectangle 19.svg" alt="image_impressions"
+                            class="image_impressions">
+                    </a>
+
                     <div class="information">
                         <article class="title_impressions">
                             <h1 class="main_title_impressions">Красивая Италия, какая она в реальности?</h1>
@@ -252,13 +269,16 @@
                     </div>
                 </div>
                 <div class="container_impressions">
-                    <img width="230" height="280" src="img/Rectangle 19 (1).svg" alt="image_impressions" class="image_impressions">
+                    <a href="#">
+                        <img width="230" height="280" src="img/Rectangle 19 (1).svg" alt="image_impressions"
+                            class="image_impressions">
+                    </a>
                     <div class="information">
                         <article class="title_impressions">
                             <h1 class="main_title_impressions">Долой сомнения! Весь мир открыт для вас!</h1>
                             <p class="text_impressoins">Для современного мира базовый вектор развития предполагает
                                 независимые способы реализации соответствующих условий активизации ... независимые
-                                способы реализации соответствующих условий активизации ...Для современного мира базовый
+                                способы реализации соответствующих условий активизации . Для современного мира базовый
                                 вектор развития предполагает независимые способы реализации соответствующих условий
                                 активизации ... независимые способы реализации соответствующих условий активизации ...
                             </p>
@@ -270,7 +290,11 @@
                     </div>
                 </div>
                 <div class="container_impressions">
-                    <img width="230" height="280" src="img/Rectangle 19 (2).svg" alt="image_impressions" class="image_impressions">
+                    <a href="#">
+                        <img width="230" height="280" src="img/Rectangle 19 (2).svg" alt="image_impressions"
+                            class="image_impressions">
+                    </a>
+
                     <div class="information">
                         <article class="title_impressions">
                             <h1 class="main_title_impressions">Как подготовиться к путешествию в одиночку? </h1>
@@ -283,11 +307,15 @@
                     </div>
                 </div>
                 <div class="container_impressions">
-                    <img width="230" height="280" src="img/Rectangle 19 (3).svg" alt="image_impressions" class="image_impressions">
+                    <a href="#">
+                        <img width="230" height="280" src="img/Rectangle 19 (3).svg" alt="image_impressions"
+                            class="image_impressions">
+                    </a>
+
                     <div class="information">
                         <article class="title_impressions">
                             <h1 class="main_title_impressions">Индия ... летим?</h1>
-                            <p class="text_impressoins">Для современного мира базовый/</p>
+                            <p class="text_impressoins">Для современного мира базовый</p>
                         </article>
                         <div class="date_link">
                             <div class="post_date">01/04/2023</div>
@@ -299,6 +327,211 @@
             <button class="other_post">Другие материалы</button>
         </div>
     </section>
+    <div class="for_position">
+        <section class="photo_hub">
+            <div class="our_photos center">
+                <div class="block_title_photo">
+                    <h1 class="about">фото-отчет</h1>
+                    <h2 class="title">Делимся впечатлениями</h2>
+                </div>
+                <div class="photo">
+                    <div class="photo_container">
+                        <img src="img/Rectangle20.svg" alt="photo" class="photo_tour" onclick="expandImage(this)">
+                        <img src="img/iconamoon_zoom-in-light.svg" alt="zoom" class="zoom">
+                        <div id="modal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="expanded-image">
+                        </div>
+                    </div>
+                    <div class="photo_container_min">
+                        <img src="img/Rectangle21.svg" alt="photo" class="photo_tour" onclick="expandImage(this)">
+                        <div id="modal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="expanded-image">
+                        </div>
+                    </div>
+                    <div class="photo_container_min">
+                        <img src="img/Rectangle22.svg" alt="photo" class="photo_tour" onclick="expandImage(this)">
+                        <div id="modal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="expanded-image">
+                        </div>
+                    </div>
+                    <div class="photo_container_min">
+                        <img src="img/Rectangle24.svg" alt="photo" class="photo_tour" onclick="expandImage(this)">
+                        <div id="modal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="expanded-image">
+                        </div>
+                    </div>
+                    <div class="photo_container">
+                        <img src="img/Rectangle23.svg" alt="photo" class="photo_tour" onclick="expandImage(this)">
+                        <div id="modal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="expanded-image">
+                        </div>
+                    </div>
+                    <div class="photo_container_min">
+                        <img src="img/Rectangle25.svg" alt="photo" class="photo_tour" onclick="expandImage(this)">
+                        <div id="modal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="expanded-image">
+                        </div>
+                    </div>
+                </div>
+                <button class="link_pinterest">Наш pinterest</button>
+            </div>
+            <script src="photo.js"></script>
+        </section>
+        <section class="section_mailing center">
+            <div class="left_block_mailing">
+                <h1 class="about spec_about">актуально</h1>
+                <h2 class="title spec_title">Получайте полезные рассылки о путешествиях</h2>
+            </div>
+            <div class="right_block_malling">
+                <form action="" class="form_malling">
+
+                    <label for="1" class="name_label">Введите e-mail адрес</label>
+                    <div class="block_input">
+                        <input id="1" type="email" class="input_email" placeholder="name@domain.com">
+                        <button id="1" type="submit" class="subscribe">Подписаться на новости</button>
+                    </div>
+                    <a href="#" class="agreement">подписываясь на новости, вы автоматически соглашаетесь с
+                        <span class="underline">условиями обработки
+                            персональных данных</span> и <span class="underline">правилами рекламных рассылок</span>
+                    </a>
+
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="last_section">
+        <div class="top_block_footer center">
+            <div class="company_information">
+                <div class="main_information">
+                    <h1 class="title_footer">Компания «РумТибет»</h1>
+                    <p class="text_footer">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
+                        более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+                    </p>
+                </div>
+                <div class="contacts">
+                    <a href="#" class="email">info@domain.com</a>
+                    <a href="#" class="number">+7 (123) 456-78-90</a>
+                </div>
+                <div class="social">
+                    <a href="#" class="icons"><img src="img/ic_baseline-telegram.svg" alt="telegram"
+                            class="social_icon"></a>
+                    <a href="#" class="icons"><img src="img/entypo-social_vk-with-circle.svg" alt="vk"
+                            class="social_icon"></a>
+                    <a href="#" class="icons"><img src="img/mdi_pinterest.svg" alt="pinterest" class="social_icon"></a>
+                    <a href="#" class="icons"><img src="img/mdi_skype.svg" alt="skype" class="social_icon"></a>
+                </div>
+            </div>
+            <dl class="we_services">
+                <dt class="title_footer">Наши услуги</dt>
+                <div class="links_serv">
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Прогулки в горы летом</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Зимние походы в горы</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Посещение храмов в горах</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Экстремальные виды туризма</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Походы в джунглях Амазонии</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector" class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Поездка в Африку</dd>
+                    </a>
+                </div>
+            </dl>
+            <dl class="important_for">
+                <dt class="title_footer">Важно для путешествий</dt>
+                <div class="links_impor">
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Как собрать в долгий поход?</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Жизненно важные предметы для похода</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Медицинская страховка, гарантии безопасности</dd>
+                    </a>
+                    <a href="#" class="link_footer">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vector"
+                                d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700888 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
+                                fill="#FDFDFD" />
+                        </svg>
+                        <dd class="text_footer">Если вы врач - загляните сюда</dd>
+                    </a>
+                </div>
+            </dl>
+        </div>
+    </section>
+    <footer class="main_footer">
+        <div class="bottom_block_footer center">
+            <div class="adress">
+                <h1 class="text_adress">ИП Константинопольский К.К., 2023</h1>
+            </div>
+            <div class="personal_data">
+                <a href="#" class="link_data">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+    <script src="video.js"></script>
+    <script src="rang.js"></script>
 </body>
 
 </html>
