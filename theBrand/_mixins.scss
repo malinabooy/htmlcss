@@ -5,3 +5,10 @@
     align-items: center;
     justify-content: $justPosition;
 }
+
+@mixin displayFlexNotCenter ($columnRow, $itemStart, $justPosition){
+    display: flex;
+    flex-direction: $columnRow;
+    align-items: $itemStart;
+    justify-content: $justPosition;
+}

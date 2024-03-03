@@ -1,0 +1,212 @@
+@import '../mixins';
+@import '../var';
+
+@import '../header';
+@import '../sectionMenu';
+@import '../subscribe';
+@import '../footer';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $textStyle;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.box-content {
+    overflow: hidden;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite/2);
+    padding-right: calc(50% - $widthSite/2);
+}
+
+.sectionCart {
+    box-sizing: border-box;
+    padding-top: 96px;
+    height: 998px;
+    display: flex;
+    gap: 128px;
+
+    &__top {
+        @include displayFlexSpace(column, center);
+        gap: 40px;
+    }
+
+    &__selectProduct {
+        display: flex;
+        gap: 40px;
+        width: 652px;
+        height: 306px;
+        box-shadow: 10px 15px 15px rgba(80, 76, 76, 0.2);
+        position: relative;
+    }
+
+    &__escape {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        cursor: pointer;
+    }
+
+    &__infoProduct {
+        margin-top: 22px;
+        @include displayFlexNotCenter(column, flex-start, left);
+        gap: 42px;
+    }
+
+    &__titleSelect {
+        width: 262px;
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__secondInfoProduct {
+        @include displayFlexNotCenter(column, flex-start, left);
+        gap: 6px;
+    }
+
+    &__selectPrice {
+        @include displayFlexNotCenter(row, center, center);
+        gap: 10px;
+        color: #6F6E6E;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+
+    }
+
+    &__spansPrice {
+        color: $textColor;
+    }
+
+    &__spansQuantity {
+        @include displayFlexNotCenter(row, center, center);
+        width: 44px;
+        height: 24px;
+        border: 2px solid #EAEAEA;
+        color: #6F6E6E;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+    }
+
+    &__bottoms {
+        margin-top: 72px;
+        @include displayFlexNotCenter(row, center, space-between);
+    }
+
+    &__selectButtom {
+        border: 2px solid #A4A4A4;
+        border-radius: 2px;
+        background: none;
+        width: 235px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+    }
+
+    &__right {
+        @include displayFlexNotCenter(column, center, start);
+        gap: 57px;
+    }
+
+    &__blockInputsAdress {
+        @include displayFlexNotCenter(column, flex-start, space-between);
+        gap: 20px;
+        box-sizing: border-box;
+        padding: 17px 0;
+    }
+
+    &__titleAdress {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        color: #222222;
+    }
+
+    input {
+        border: 2px solid #A4A4A4;
+        border-radius: 2px;
+        width: 360px;
+        height: 45px;
+        box-sizing: border-box;
+        padding: 13px 18px 13px 18px;
+    }
+
+    &__getQuate {
+        border: 2px solid #A4A4A4;
+        border-radius: 2px;
+        background: none;
+        width: 102px;
+        height: 35px;
+        cursor: pointer;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        color: #A4A4A4;
+    }
+
+    &__blockTotal {
+        background-color: #F5F3F3;
+        width: 360px;
+        height: 214px;
+        box-sizing: border-box;
+        padding: 37px 42px;
+        @include displayFlexNotCenter(column, flex-end, space-between);
+    }
+
+    &__sub {
+        color: #4A4A4A;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+
+    }
+
+    &__grand {
+        color: #4A4A4A;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+    }
+
+    &__spansSub {
+        margin-left: 15px;
+    }
+
+    &__spansGrand {
+        color: $textColor;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+
+    &__chechout {
+        width: 273px;
+        height: 50px;
+        background-color: $textColor;
+        border: $textColor;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+}
