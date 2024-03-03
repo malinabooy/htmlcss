@@ -1,0 +1,76 @@
+@import 'mixins';
+@import 'var';
+
+.subscribe {
+    @include displayFlexSpace(row, space-between);
+    height: 448px;
+    background-image: url(img/backPhoto.png);
+    background-size: cover;
+    margin-top: 128px;
+}
+
+.rewie {
+    @include displayFlexSpace(column, center);
+    flex-wrap: nowrap;
+    gap: 30px;
+    max-width: 360px;
+
+    .text_rewie {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .face {
+        max-width: 96px;
+    }
+}
+
+.for_subscribe {
+    @include displayFlexSpace(column, space-between);
+    flex-wrap: nowrap;
+    gap: 32px;
+
+    .text_subscribe {
+        color: #222224;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .style_text {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .form_sub {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .inputs {
+        background-color: #E1E1E1;
+        border: none;
+        border-radius: 25px 0 0 25px;
+        max-width: 256px;
+        min-width: 245px;
+        height: 49px;
+        padding-left: 22px;
+    }
+
+
+    .buttons {
+        background-color: #F16D7F;
+        color: white;
+        border: none;
+        border-radius: 0 25px 25px 0;
+        cursor: pointer;
+        max-width: 100px;
+        min-width: 95px;
+        height: 49px;
+    }
+}

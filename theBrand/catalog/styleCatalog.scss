@@ -1,0 +1,292 @@
+@import '../mixins';
+@import '../var';
+
+@import '../header';
+@import '../sectionMenu';
+@import '../subscribe';
+@import '../footer';
+@import '../advantages';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $textStyle;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.box-content {
+    overflow: hidden;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite/2);
+    padding-right: calc(50% - $widthSite/2);
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.blockFilter {
+    height: 132px;
+    padding-top: 39px;
+    box-sizing: border-box;
+    display: flex;
+
+    .filter {
+        padding-top: 13px;
+        box-sizing: border-box;
+        width: 360px;
+        z-index: 10;
+
+        &__content {
+            background-color: #fff;
+            padding: 0 16px 16px 16px;
+        }
+
+        &[open] {
+            background: #FFFFFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        }
+
+        &[open] .filter__heading {
+            color: $textColor;
+        }
+
+        &[open] path {
+            fill: $textColor;
+        }
+
+        &__heading {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000;
+        }
+
+        &__summary {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding: 0 16px;
+        }
+
+        &__item {
+            margin-top: 16px;
+        }
+
+        &__head {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+        }
+
+        &__summaryItem {
+            padding: 8px 11px 11px 11px;
+            border-bottom: 1px solid #EBEBEB;
+            border-left: 5px solid $textColor;
+        }
+
+        &__item[open] .filter__head {
+            color: $textColor;
+        }
+
+        &__linkBox {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding: 24px 16px;
+        }
+
+        &__link {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+
+            &:hover {
+                color: $textColor;
+            }
+        }
+
+
+
+    }
+
+    .sort {
+        padding-top: 12px;
+        display: flex;
+        gap: 18px;
+        z-index: 10;
+
+        &__details {
+            position: relative;
+
+        }
+
+        & [open] .sort__details {
+            color: $textColor;
+        }
+
+        &__summary {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        &__heading {
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            font-weight: 400;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: absolute;
+            left: -9px;
+            top: 22px;
+            background: #FFFFFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            padding: 7px 30px 11px 9px;
+        }
+
+        &__check {
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            font-size: 14px;
+            line-height: 16px;
+            color: #6F6E6E;
+            font-weight: 400;
+        }
+
+        input[type="checkbox"] {
+            display: inline-block;
+            width: 20px;
+            /* Установите ширину и высоту для квадрата */
+            height: 20px;
+            background-color: #fff;
+            /* Цвет квадрата */
+            border: 1px solid #000;
+            /* Граница квадрата */
+            cursor: pointer;
+            /* Курсор при наведении */
+        }
+
+        /* Изменить стиль квадрата при выборе */
+        input[type="checkbox"]:checked+label {
+            color: $textColor;
+        }
+    }
+}
+
+.example {
+    @include displayFlexSpace(column, center);
+    margin-bottom: 95px;
+
+    &__products {
+        @include displayFlexSpace(row, center);
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 48px;
+    }
+
+    &__blocks {
+        width: 360px;
+        height: 581px;
+        display: grid;
+        position: relative;
+        overflow: hidden;
+        background-color: #EBEBEB;
+    }
+
+    &__name_item {
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__about_item {
+        color: #5D5D5D;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__price {
+        color: $textColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .add_to_cart_overlay {
+        cursor: pointer;
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(img/Hover.svg) no-repeat center center;
+        background-size: contain;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    &__item:hover .add_to_cart_overlay {
+        opacity: 1;
+    }
+
+    .image_item {
+        width: 360px;
+        height: 420px;
+    }
+
+    &__frames {
+        @include displayFlexSpace(column, center);
+        width: 360px;
+        box-sizing: border-box;
+        padding: 24px 16px;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .blockPagination {
+        margin-top: 18px;
+        padding: 15px 15px;
+        box-sizing: border-box;
+        border: 1px solid #C4C4C4;
+        border-radius: 2px;
+        width: 284px;
+        height: 44px;
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            &__link {
+                color: #C4C4C4;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &__link.active {
+                color: $textColor;
+            }
+        }
+    }
+
+}

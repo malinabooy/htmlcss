@@ -1,0 +1,24 @@
+@import 'mixins';
+@import 'var';
+
+.sectionMenu {
+    @include displayFlexSpace(row, space-between);
+    height: 148px;
+    background-color: #F8F3F4;
+
+    .pageName {
+        font-size: 24px;
+        font-weight: 500;
+        color: $textColor;
+    }
+
+    .pageLinks {
+        font-size: 14px;
+        font-weight: 100;
+        color: $specificsColor;
+    }
+
+    .activeLink {
+        color: $textColor;
+    }
+}

@@ -1,0 +1,30 @@
+@import 'mixins';
+@import 'var';
+
+.media {
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222224;
+}
+
+.social_media {
+    display: flex;
+    gap: 7px;
+}
+
+.social_icon:hover .white {
+    cursor: pointer;
+    fill: $textColor;
+}
+
+.social_icon:hover .black {
+    cursor: pointer;
+    fill: #FBFBFB;
+}
+
+.text_brand {
+    font-size: 16px;
+    color: #FBFBFB;
+}

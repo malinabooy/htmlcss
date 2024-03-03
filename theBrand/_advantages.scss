@@ -1,0 +1,42 @@
+@import 'mixins';
+@import 'var';
+
+.advantages {
+    min-height: 341px;
+    background-color: #222224;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type_advantages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.block_advantages {
+    max-width: 360px;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.name_advantages {
+    color: #FBFBFB;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text_advantages {
+    color: #FBFBFB;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
