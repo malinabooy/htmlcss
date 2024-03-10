@@ -1,0 +1,152 @@
+@import '../mixins';
+@import '../var';
+
+@import '../header';
+@import '../sectionMenu';
+@import '../subscribe';
+@import '../footer';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $textStyle;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.box-content {
+    overflow: hidden;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite/2);
+    padding-right: calc(50% - $widthSite/2);
+}
+
+.registration {
+    box-sizing: border-box;
+    padding-top: 64px;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 128px;
+
+    &__leftBlock {
+        @include displayFlexNotCenter (column, flex-start, center);
+        gap: 33px;
+        width: 360px;
+    }
+
+    &__top {
+        @include displayFlexNotCenter (column, flex-start, center);
+        gap: 20px;
+    }
+
+    &__title {
+        color: #000;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: normal;
+    }
+
+    &__blockInput {
+        width: 360px;
+        height: 45px;
+        border-radius: 1px solid #A4A4A4;
+        box-sizing: border-box;
+        padding: 15px;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    &__checkGender {
+        @include displayFlexSpace(row, center);
+        gap: 8px;
+
+    }
+
+    &__gender {
+        width: 17px;
+        height: 17px;
+        border: 1px solid #B1B1B1;
+        cursor: pointer;
+    }
+
+    &__textGender {
+        margin-right: 10px;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    &__bottom {
+        @include displayFlexNotCenter (column, flex-start, center);
+        gap: 20px;
+    }
+
+    &__recommendation {
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__join {
+        width: 167px;
+        height: 50px;
+        color: #FFFFFF;
+        background-color: $textColor;
+        border: $textColor;
+        @include displayFlexNotCenter (row, center, space-evenly);
+        gap: 20px;
+        cursor: pointer;
+    }
+
+    &__rightBlock {
+        width: 652px;
+        height: 334px;
+    }
+
+    &__preferencesTitle {
+        @include displayFlexNotCenter (column, flex-start, center);
+        gap: 22px;
+    }
+
+    &__titlePreferences {
+        color: #000;
+        font-size: 24px;
+        font-weight: 100;
+        line-height: normal;
+    }
+    &__textPreferences{
+        color: #000;
+        font-size: 24px;
+        font-weight: 100;
+        line-height: normal;
+    }
+    &__perks {
+        list-style-type: none;
+        @include displayFlexNotCenter (column, flex-start, center);
+        gap: 17px;
+    }
+    &__perks li {
+        background-image:url(img/Vector.svg) ;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding-left: 40px;
+        background-size: 20px 16px;
+    }
+    &__perkText {
+        color: #000;
+        font-size: 24px;
+        font-weight: 100;
+        line-height: normal;
+    }
+
+}

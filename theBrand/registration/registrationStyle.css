@@ -1,0 +1,346 @@
+.header {
+  background: #222222;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  position: relative;
+}
+.header__group1 {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+}
+.header__group2 {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.header__icons1 {
+  cursor: pointer;
+}
+.header #burger {
+  position: absolute;
+  left: -99999999px;
+  visibility: hidden;
+}
+.header #burger:checked ~ .dropMenu {
+  right: -232px;
+}
+.header .dropMenu {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 232px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 32px 32px;
+  top: 75px;
+  right: 0;
+  transition: right 0.5s;
+}
+.header .menu {
+  color: #222;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 4px;
+}
+.header .main_text_menu {
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.header .menu_links {
+  text-decoration: none;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 10px;
+}
+.header .menu_block {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.sectionMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 148px;
+  background-color: #F8F3F4;
+}
+.sectionMenu .pageName {
+  font-size: 24px;
+  font-weight: 500;
+  color: #F16D7F;
+}
+.sectionMenu .pageLinks {
+  font-size: 14px;
+  font-weight: 100;
+  color: #6F6E6E;
+}
+.sectionMenu .activeLink {
+  color: #F16D7F;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 448px;
+  background-image: url(img/backPhoto.png);
+  background-size: cover;
+  margin-top: 128px;
+}
+
+.rewie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  max-width: 360px;
+}
+.rewie .text_rewie {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.rewie .face {
+  max-width: 96px;
+}
+
+.for_subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 32px;
+}
+.for_subscribe .text_subscribe {
+  color: #222224;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.for_subscribe .style_text {
+  font-size: 24px;
+  font-weight: 700;
+}
+.for_subscribe .form_sub {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.for_subscribe .inputs {
+  background-color: #E1E1E1;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  max-width: 256px;
+  min-width: 245px;
+  height: 49px;
+  padding-left: 22px;
+}
+.for_subscribe .buttons {
+  background-color: #F16D7F;
+  color: white;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  max-width: 100px;
+  min-width: 95px;
+  height: 49px;
+}
+
+.media {
+  height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222224;
+}
+
+.social_media {
+  display: flex;
+  gap: 7px;
+}
+
+.social_icon:hover .white {
+  cursor: pointer;
+  fill: #F16D7F;
+}
+
+.social_icon:hover .black {
+  cursor: pointer;
+  fill: #FBFBFB;
+}
+
+.text_brand {
+  font-size: 16px;
+  color: #FBFBFB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.box-content {
+  overflow: hidden;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.registration {
+  box-sizing: border-box;
+  padding-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 128px;
+}
+.registration__leftBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 33px;
+  width: 360px;
+}
+.registration__top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.registration__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: normal;
+}
+.registration__blockInput {
+  width: 360px;
+  height: 45px;
+  border-radius: 1px solid #A4A4A4;
+  box-sizing: border-box;
+  padding: 15px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__checkGender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.registration__gender {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #B1B1B1;
+  cursor: pointer;
+}
+.registration__textGender {
+  margin-right: 10px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.registration__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.registration__recommendation {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__join {
+  width: 167px;
+  height: 50px;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  border: #F16D7F;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  cursor: pointer;
+}
+.registration__rightBlock {
+  width: 652px;
+  height: 334px;
+}
+.registration__preferencesTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 22px;
+}
+.registration__titlePreferences {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: normal;
+}
+.registration__textPreferences {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: normal;
+}
+.registration__perks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 17px;
+}
+.registration__perks li {
+  background-image: url(img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 40px;
+  background-size: 20px 16px;
+}
+.registration__perkText {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: normal;
+}/*# sourceMappingURL=registrationStyle.css.map */
