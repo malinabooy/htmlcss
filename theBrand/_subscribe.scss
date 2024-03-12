@@ -6,7 +6,6 @@
     height: 448px;
     background-image: url(img/backPhoto.png);
     background-size: cover;
-    margin-top: 128px;
 }
 
 .rewie {
@@ -56,10 +55,10 @@
         background-color: #E1E1E1;
         border: none;
         border-radius: 25px 0 0 25px;
-        max-width: 256px;
-        min-width: 245px;
+        width: 260px;
         height: 49px;
         padding-left: 22px;
+        box-sizing: border-box;
     }
 
 

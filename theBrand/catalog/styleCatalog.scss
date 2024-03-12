@@ -42,7 +42,7 @@ summary::-webkit-details-marker {
         padding-top: 13px;
         box-sizing: border-box;
         width: 360px;
-        z-index: 10;
+        z-index: 5;
 
         &__content {
             background-color: #fff;
@@ -123,7 +123,7 @@ summary::-webkit-details-marker {
         padding-top: 12px;
         display: flex;
         gap: 18px;
-        z-index: 10;
+        z-index: 5;
 
         &__details {
             position: relative;
@@ -273,9 +273,11 @@ summary::-webkit-details-marker {
         border-radius: 2px;
         width: 284px;
         height: 44px;
+
         .pagination {
             display: flex;
             justify-content: space-between;
+
             &__link {
                 color: #C4C4C4;
                 font-size: 16px;
@@ -283,10 +285,127 @@ summary::-webkit-details-marker {
                 font-weight: 400;
                 line-height: normal;
             }
+
             &__link.active {
                 color: $textColor;
             }
         }
     }
 
+}
+
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - $widthTablet / 2);
+        padding-right: calc(50% - $widthTablet / 2);
+    }
+
+    .blockFilter {
+        height: 81px;
+        justify-content: space-between;
+        padding: 24px 16px 0  0 ;
+    }
+
+    .example {
+        margin-bottom: 63px;
+
+        &__products {
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .blockPagination {
+            margin-top: 0;
+        }
+    }
+    .type_advantages {
+        padding-block: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-size: cover;
+        height: 614px;
+    }
+
+    .rewie {
+        margin-top: 64px;
+    }
+
+    .form_sub {
+        margin-bottom: 140px;
+    }
+
+    .for_subscribe {
+        gap: 27px;
+    }
+}
+
+@media (max-width:767px) {
+    .center {
+        padding-left: calc(50% - $widthPhone / 2);
+        padding-right: calc(50% - $widthPhone / 2);
+    }
+    .header {
+        &__group1 {
+            margin: 6px;
+        }
+    
+        &__group2 {
+            margin: 6px;
+            gap: 0px;
+        }
+    }
+
+    .header_icons3 {
+        display: none;
+    }
+
+    .header_icons2 {
+        display: none;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-size: cover;
+        background-position: -380px 0;
+        height: 550px;
+        box-sizing: border-box;
+        padding: 16px;
+        .rewie{
+            .text_rewie {
+                font-size: 18px;
+            }
+        }
+        .for_subscribe{
+            .style_text{
+                font-size: 24px;
+            }
+            .text_subscribe {
+                font-size: 14px;
+            }
+            .form_sub {
+                margin-bottom: 110px;
+.inputs {
+    width: 245px;
+}
+            }
+        }
+    }
+    .media {
+        height: 143px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .text_brand {
+        margin-bottom: 9px;
+    }
 }
