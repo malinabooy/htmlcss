@@ -215,7 +215,11 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
+.item {
+    display: flex;
+    text-decoration: none;
+    background-color: #EBEBEB;
+}
 .item:hover .add_to_cart_overlay {
     opacity: 1;
 }
@@ -235,10 +239,7 @@
     gap: 16px;
 }
 
-.item {
-    display: flex;
 
-}
 
 .all_product {
     font-size: 16px;
@@ -306,14 +307,6 @@
     .center {
         padding-left: calc(50% - $widthTablet / 2);
         padding-right: calc(50% - $widthTablet / 2);
-    }
-
-    .group1 {
-        margin: 0px 16px;
-    }
-
-    .group2 {
-        margin: 0px 16px;
     }
 
     .man_image {

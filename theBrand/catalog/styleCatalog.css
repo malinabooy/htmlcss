@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   background: #222222;
   display: flex;
@@ -73,6 +72,29 @@
   margin-bottom: 12px;
 }
 
+@media (max-width: 1024px) {
+  .header__group1 {
+    margin: 0px 16px;
+  }
+  .header__group2 {
+    margin: 0px 16px;
+  }
+}
+@media (max-width: 767px) {
+  .header__group1 {
+    margin: 6px;
+  }
+  .header__group2 {
+    margin: 6px;
+    gap: 0px;
+  }
+  .header_icons3 {
+    display: none;
+  }
+  .header_icons2 {
+    display: none;
+  }
+}
 .sectionMenu {
   display: flex;
   flex-direction: row;
@@ -91,10 +113,22 @@
   font-weight: 100;
   color: #6F6E6E;
 }
+.sectionMenu .pageLinks:not(:last-child)::after {
+  content: " /";
+}
 .sectionMenu .activeLink {
   color: #F16D7F;
 }
 
+@media (max-width: 767px) {
+  .sectionMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
 .subscribe {
   display: flex;
   flex-direction: row;
@@ -169,6 +203,52 @@
   height: 49px;
 }
 
+@media (max-width: 1024px) {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-size: cover;
+    background-position: -380px 0;
+    height: 614px;
+  }
+  .rewie {
+    margin-top: 64px;
+  }
+  .for_subscribe {
+    gap: 27px;
+  }
+  .for_subscribe .form_sub {
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: 767px) {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-size: cover;
+    background-position: -380px 0;
+    height: 550px;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+  .subscribe .rewie .text_rewie {
+    font-size: 18px;
+  }
+  .subscribe .for_subscribe .style_text {
+    font-size: 24px;
+  }
+  .subscribe .for_subscribe .text_subscribe {
+    font-size: 14px;
+  }
+  .subscribe .for_subscribe .form_sub {
+    margin-bottom: 110px;
+  }
+  .subscribe .for_subscribe .form_sub .inputs {
+    width: 245px;
+  }
+}
 .media {
   height: 79px;
   display: flex;
@@ -197,6 +277,18 @@
   color: #FBFBFB;
 }
 
+@media (max-width: 767px) {
+  .media {
+    height: 143px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  .text_brand {
+    margin-bottom: 9px;
+  }
+}
 .advantages {
   min-height: 341px;
   background-color: #222224;
@@ -237,6 +329,14 @@
   line-height: normal;
 }
 
+@media (max-width: 1024px) {
+  .type_advantages {
+    padding-block: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -272,15 +372,16 @@ summary::-webkit-details-marker {
   padding-top: 13px;
   box-sizing: border-box;
   width: 360px;
-  z-index: 5;
+  z-index: 6;
 }
 .blockFilter .filter__content {
   background-color: #fff;
   padding: 0 16px 16px 16px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.13);
 }
 .blockFilter .filter[open] {
   background: #FFFFFF;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px -6px 8px rgba(0, 0, 0, 0.13);
 }
 .blockFilter .filter[open] .filter__heading {
   color: #F16D7F;
@@ -337,7 +438,6 @@ summary::-webkit-details-marker {
   display: flex;
   gap: 18px;
   z-index: 5;
-  /* Изменить стиль квадрата при выборе */
 }
 .blockFilter .sort__details {
   position: relative;
@@ -365,7 +465,7 @@ summary::-webkit-details-marker {
   top: 22px;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  padding: 7px 30px 11px 9px;
+  padding: 7px 11px 11px 7px;
 }
 .blockFilter .sort__check {
   display: flex;
@@ -379,14 +479,10 @@ summary::-webkit-details-marker {
 .blockFilter .sort input[type=checkbox] {
   display: inline-block;
   width: 20px;
-  /* Установите ширину и высоту для квадрата */
   height: 20px;
   background-color: #fff;
-  /* Цвет квадрата */
   border: 1px solid #000;
-  /* Граница квадрата */
   cursor: pointer;
-  /* Курсор при наведении */
 }
 .blockFilter .sort input[type=checkbox]:checked + label {
   color: #F16D7F;
@@ -511,80 +607,48 @@ summary::-webkit-details-marker {
   .example .blockPagination {
     margin-top: 0;
   }
-  .type_advantages {
-    padding-block: 48px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
-  .subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    background-size: cover;
-    height: 614px;
-  }
-  .rewie {
-    margin-top: 64px;
-  }
-  .form_sub {
-    margin-bottom: 140px;
-  }
-  .for_subscribe {
-    gap: 27px;
-  }
 }
 @media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 180px);
     padding-right: calc(50% - 180px);
   }
-  .header__group1 {
-    margin: 6px;
+  .blockFilter {
+    height: 81px;
+    justify-content: space-between;
+    padding: 11px 16px 0 0;
   }
-  .header__group2 {
-    margin: 6px;
-    gap: 0px;
+  .blockFilter .filter {
+    width: 100px;
   }
-  .header_icons3 {
+  .blockFilter .filter__heading {
     display: none;
   }
-  .header_icons2 {
-    display: none;
+  .blockFilter .filter__svg {
+    width: 37px;
+    height: 25px;
   }
-  .subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    background-size: cover;
-    background-position: -380px 0;
-    height: 550px;
-    box-sizing: border-box;
-    padding: 16px;
+  .blockFilter .filter__content {
+    padding: 0 8px 8px 8px;
   }
-  .subscribe .rewie .text_rewie {
-    font-size: 18px;
+  .blockFilter .filter__summary {
+    padding: 0 8px;
   }
-  .subscribe .for_subscribe .style_text {
-    font-size: 24px;
+  .blockFilter .filter__summaryItem {
+    padding: 4px 6px 6px 6px;
   }
-  .subscribe .for_subscribe .text_subscribe {
-    font-size: 14px;
+  .blockFilter .filter__linkBox {
+    gap: 6px;
+    padding: 12px 8px;
   }
-  .subscribe .for_subscribe .form_sub {
-    margin-bottom: 110px;
+  .blockFilter .sort {
+    gap: 13px;
   }
-  .subscribe .for_subscribe .form_sub .inputs {
-    width: 245px;
+  .blockFilter .sort__summary {
+    gap: 8px;
   }
-  .media {
-    height: 143px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    gap: 40px;
-  }
-  .text_brand {
-    margin-bottom: 9px;
+  .blockFilter .sort__heading {
+    line-height: 14px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=styleCatalog.css.map */

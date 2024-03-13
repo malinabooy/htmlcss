@@ -17,8 +17,20 @@
         font-weight: 100;
         color: $specificsColor;
     }
-
+    .pageLinks:not(:last-child)::after {
+        content: ' /';
+    }
+    
     .activeLink {
         color: $textColor;
+    }
+}
+@media (max-width:1024px) {
+    
+}
+@media (max-width:767px) {
+    .sectionMenu{
+        @include displayFlexSpace(column, center);
+        gap: 20px;
     }
 }

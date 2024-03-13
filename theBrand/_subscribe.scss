@@ -73,3 +73,60 @@
         height: 49px;
     }
 }
+@media (max-width:1024px) {
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-size: cover;
+        background-position: -380px 0;
+        height: 614px;
+    }
+
+    .rewie {
+        margin-top: 64px;
+    }
+
+    .for_subscribe {
+        gap: 27px;
+        .form_sub {
+            margin-bottom: 140px;
+        }
+    }
+}
+@media (max-width:767px) {
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-size: cover;
+        background-position: -380px 0;
+        height: 550px;
+        box-sizing: border-box;
+        padding: 16px;
+
+        .rewie {
+            .text_rewie {
+                font-size: 18px;
+            }
+        }
+
+        .for_subscribe {
+            .style_text {
+                font-size: 24px;
+            }
+
+            .text_subscribe {
+                font-size: 14px;
+            }
+
+            .form_sub {
+                margin-bottom: 110px;
+
+                .inputs {
+                    width: 245px;
+                }
+            }
+        }
+    }
+}

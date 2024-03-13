@@ -50,6 +50,8 @@
         top: 28px;
         right: 22px;
         cursor: pointer;
+        width: 18px;
+        height:18px;
     }
 
     &__infoProduct {
@@ -87,12 +89,13 @@
         color: $textColor;
     }
 
-    &__spansQuantity {
-        @include displayFlexNotCenter(row, center, center);
+    &__quantity {
         width: 44px;
         height: 24px;
+        box-sizing: border-box;
+        padding: 0 15px;
         border: 2px solid #EAEAEA;
-        color: #6F6E6E;
+        color: $textColor;
         font-size: 18px;
         font-style: normal;
         font-weight: 200;
@@ -115,6 +118,7 @@
         font-style: normal;
         font-weight: 200;
         line-height: normal;
+        color: #c9c6c6;
     }
 
     &__right {
@@ -129,6 +133,11 @@
         padding: 17px 0;
     }
 
+    &__forms {
+        @include displayFlexNotCenter(column, flex-start, center);
+        gap: 20px;
+    }
+
     &__titleAdress {
         font-size: 16px;
         font-style: normal;
@@ -137,7 +146,7 @@
         color: #222222;
     }
 
-    input {
+    &__enterInfo {
         border: 2px solid #A4A4A4;
         border-radius: 2px;
         width: 360px;
@@ -186,6 +195,12 @@
         line-height: normal;
     }
 
+    .horizontal-line {
+        width: 275px;
+        height: 1px;
+        background-color: #E2E2E2;
+    }
+
     &__spansSub {
         margin-left: 15px;
     }
@@ -209,4 +224,111 @@
         cursor: pointer;
     }
 
+}
+
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - $widthTablet / 2);
+        padding-right: calc(50% - $widthTablet / 2);
+    }
+
+    .sectionCart {
+        height: 1287px;
+        @include displayFlexNotCenter(column, center, center);
+        gap: 64px;
+        padding: 0;
+
+        &__selectProduct {
+            width: 734px;
+        }
+
+        &__bottoms {
+            margin-top: 62px;
+            @include displayFlexNotCenter(row, center, space-evenly);
+        }
+
+        &__right {
+            @include displayFlexNotCenter(row, center, center);
+            gap: 15px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .center {
+        padding-left: calc(50% - $widthPhone / 2);
+        padding-right: calc(50% - $widthPhone / 2);
+    }
+
+    .sectionCart {
+        height: 1188px;
+        @include displayFlexNotCenter(column, center, center);
+        gap: 32px;
+        padding: 0;
+
+        &__selectProduct {
+            width: 358px;
+            height: 188px;
+            gap: 17px;
+        }
+
+        &__selectProductsImage {
+            width: 144px;
+            height: 188px;
+        }
+
+        &__infoProduct {
+            gap: 25px;
+            margin-top: 13px;
+        }
+
+        &__titleSelect {
+            width: 143px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        &__selectPrice {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        &__secondInfoProduct {
+            gap: 4px;
+        }
+
+        &__spans {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        &__quantity {
+            width: 24px;
+            height: 15px;
+            padding: 0 5px;
+        }
+
+        &__bottoms {
+            margin-top: 30px;
+            @include displayFlexNotCenter(row, center, space-evenly);
+        }
+
+        &__selectButtom {
+            width: 175px;
+            height: 33px;
+            font-size: 12px;
+        }
+
+        &__escape {
+            width: 12px;
+            height: 12px;
+            top: 12px;
+            right: 17px;
+        }
+
+        &__right {
+            @include displayFlexNotCenter(column, center, center);
+            gap: 48px;
+        }
+    }
 }

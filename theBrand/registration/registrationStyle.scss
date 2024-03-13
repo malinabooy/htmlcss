@@ -28,14 +28,16 @@
     box-sizing: border-box;
     padding-top: 64px;
     display: flex;
-
+    height: 675px;
     flex-wrap: wrap;
     gap: 128px;
 
     &__leftBlock {
+        width: 360px;
+    }
+    &__forms {
         @include displayFlexNotCenter (column, flex-start, center);
         gap: 33px;
-        width: 360px;
     }
 
     &__top {
@@ -76,6 +78,11 @@
         cursor: pointer;
     }
 
+    &__gender:checked+&__textGender {
+        color: $textColor;
+    }
+
+
     &__textGender {
         margin-right: 10px;
         color: #B1B1B1;
@@ -98,6 +105,7 @@
     }
 
     &__join {
+        margin-top: 20px;
         width: 167px;
         height: 50px;
         color: #FFFFFF;
@@ -124,24 +132,28 @@
         font-weight: 100;
         line-height: normal;
     }
-    &__textPreferences{
+
+    &__textPreferences {
         color: #000;
         font-size: 24px;
         font-weight: 100;
         line-height: normal;
     }
+
     &__perks {
         list-style-type: none;
         @include displayFlexNotCenter (column, flex-start, center);
         gap: 17px;
     }
+
     &__perks li {
-        background-image:url(img/Vector.svg) ;
+        background-image: url(img/Vector.svg);
         background-repeat: no-repeat;
         background-position: 0 0;
         padding-left: 40px;
         background-size: 20px 16px;
     }
+
     &__perkText {
         color: #000;
         font-size: 24px;
@@ -149,4 +161,65 @@
         line-height: normal;
     }
 
+}
+
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - $widthTablet / 2);
+        padding-right: calc(50% - $widthTablet / 2);
+    }
+
+    .registration {
+        height: 651px;
+        gap: 22px;
+
+        &__rightBlock {
+            width: 354px;
+        }
+
+        &__titlePreferences {
+            font-size: 16px;
+        }
+
+        &__textPreferences {
+            font-size: 16px;
+        }
+
+        &__perkText {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .center {
+        padding-left: calc(50% - $widthPhone / 2);
+        padding-right: calc(50% - $widthPhone / 2);
+    }
+    .registration {
+        height: 1032px;
+        gap: 40px;
+        padding-top: 40px;
+        
+
+        &__leftBlock {
+            height: 500px;
+        }
+        &__rightBlock {
+            width: 354px;
+            height: 340px;
+        }
+
+        &__titlePreferences {
+            font-size: 16px;
+        }
+
+        &__textPreferences {
+            font-size: 16px;
+        }
+
+        &__perkText {
+            font-size: 16px;
+        }
+    }
 }

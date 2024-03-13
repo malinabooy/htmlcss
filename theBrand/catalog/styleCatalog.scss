@@ -42,16 +42,17 @@ summary::-webkit-details-marker {
         padding-top: 13px;
         box-sizing: border-box;
         width: 360px;
-        z-index: 5;
+        z-index: 6;
 
         &__content {
             background-color: #fff;
             padding: 0 16px 16px 16px;
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.13);
         }
 
         &[open] {
             background: #FFFFFF;
-            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px -6px 8px rgba(0, 0, 0, 0.13);
         }
 
         &[open] .filter__heading {
@@ -157,7 +158,7 @@ summary::-webkit-details-marker {
             top: 22px;
             background: #FFFFFF;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-            padding: 7px 30px 11px 9px;
+            padding: 7px 11px 11px 7px;
         }
 
         &__check {
@@ -173,17 +174,12 @@ summary::-webkit-details-marker {
         input[type="checkbox"] {
             display: inline-block;
             width: 20px;
-            /* Установите ширину и высоту для квадрата */
             height: 20px;
             background-color: #fff;
-            /* Цвет квадрата */
             border: 1px solid #000;
-            /* Граница квадрата */
             cursor: pointer;
-            /* Курсор при наведении */
         }
 
-        /* Изменить стиль квадрата при выборе */
         input[type="checkbox"]:checked+label {
             color: $textColor;
         }
@@ -303,7 +299,7 @@ summary::-webkit-details-marker {
     .blockFilter {
         height: 81px;
         justify-content: space-between;
-        padding: 24px 16px 0  0 ;
+        padding: 24px 16px 0 0;
     }
 
     .example {
@@ -318,31 +314,6 @@ summary::-webkit-details-marker {
             margin-top: 0;
         }
     }
-    .type_advantages {
-        padding-block: 48px;
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-    }
-    .subscribe {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        background-size: cover;
-        height: 614px;
-    }
-
-    .rewie {
-        margin-top: 64px;
-    }
-
-    .form_sub {
-        margin-bottom: 140px;
-    }
-
-    .for_subscribe {
-        gap: 27px;
-    }
 }
 
 @media (max-width:767px) {
@@ -350,62 +321,53 @@ summary::-webkit-details-marker {
         padding-left: calc(50% - $widthPhone / 2);
         padding-right: calc(50% - $widthPhone / 2);
     }
-    .header {
-        &__group1 {
-            margin: 6px;
-        }
-    
-        &__group2 {
-            margin: 6px;
-            gap: 0px;
-        }
-    }
 
-    .header_icons3 {
-        display: none;
-    }
+    .blockFilter {
+        height: 81px;
+        justify-content: space-between;
+        padding: 11px 16px 0 0;
 
-    .header_icons2 {
-        display: none;
-    }
-    .subscribe {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        background-size: cover;
-        background-position: -380px 0;
-        height: 550px;
-        box-sizing: border-box;
-        padding: 16px;
-        .rewie{
-            .text_rewie {
-                font-size: 18px;
+        .filter {
+            width: 100px;
+
+            &__heading {
+                display: none;
+            }
+
+            &__svg {
+                width: 37px;
+                height: 25px;
+            }
+
+            &__content {
+                padding: 0 8px 8px 8px;
+            }
+
+            &__summary {
+                padding: 0 8px;
+            }
+
+            &__summaryItem {
+                padding: 4px 6px 6px 6px;
+            }
+
+            &__linkBox {
+                gap: 6px;
+                padding: 12px 8px;
             }
         }
-        .for_subscribe{
-            .style_text{
-                font-size: 24px;
+
+        .sort {
+            gap: 13px;
+
+            &__summary {
+                gap: 8px;
             }
-            .text_subscribe {
-                font-size: 14px;
-            }
-            .form_sub {
-                margin-bottom: 110px;
-.inputs {
-    width: 245px;
-}
+
+            &__heading {
+                line-height: 14px;
+                font-size: 12px;
             }
         }
-    }
-    .media {
-        height: 143px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-        gap: 40px;
-    }
-
-    .text_brand {
-        margin-bottom: 9px;
     }
 }

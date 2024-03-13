@@ -85,3 +85,34 @@
         margin-bottom: 12px;
     }
 }
+@media (max-width:1024px) {
+    .header {
+        &__group1 {
+            margin: 0px 16px;
+        }
+    
+        &__group2 {
+            margin: 0px 16px;
+        }
+    }
+}
+@media (max-width:767px) {
+    .header {
+        &__group1 {
+            margin: 6px;
+        }
+
+        &__group2 {
+            margin: 6px;
+            gap: 0px;
+        }
+    }
+
+    .header_icons3 {
+        display: none;
+    }
+
+    .header_icons2 {
+        display: none;
+    }
+}
