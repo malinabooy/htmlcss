@@ -85,6 +85,7 @@
         display: flex;
         justify-content: center;
     }
+
     &__title {
         @include displayFlexSpace (column, center);
         gap: 13px;
@@ -101,8 +102,10 @@
             color: $specificsColor;
         }
     }
+
     &__flex {
         @include displayFlexSpace (column, center);
+
         .text__product {
             display: flex;
             text-align: center;
@@ -149,6 +152,17 @@
             background-color: transparent;
             color: $textColor;
             cursor: pointer;
+            transition: 0.6s;
+            &:hover {
+                color: #FFFFFF;
+                background-color: $textColor;
+                transform: scale(110%);
+                transition: 0.6s;
+                path {
+                    fill: #FFFFFF;
+                    transition: 0.6s;
+                }
+            }
         }
     }
 }
@@ -264,6 +278,7 @@
 
     .slider {
         height: 624px;
+
         .slides__image {
             padding: 85px 0;
 
@@ -277,9 +292,11 @@
         padding: 0;
         width: 375px;
         top: 624px;
+
         &__title {
             gap: 12px;
         }
+
         &__flex {
             .text__product {
                 margin-top: 27px;
@@ -297,6 +314,7 @@
 
             .choose__block {
                 margin-top: 49px;
+
                 select {
                     font-size: 10px;
                 }

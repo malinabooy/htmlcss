@@ -17,6 +17,7 @@
     padding-left: calc(50% - $widthSite / 2);
     padding-right: calc(50% - $widthSite / 2);
 }
+
 .box-content {
     overflow: hidden;
 }
@@ -215,11 +216,13 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 .item {
     display: flex;
     text-decoration: none;
     background-color: #EBEBEB;
 }
+
 .item:hover .add_to_cart_overlay {
     opacity: 1;
 }
@@ -253,7 +256,17 @@
     color: #F16D7F;
     text-align: center;
     cursor: pointer;
+    transition: 0.6s;
+
+    &:hover {
+        color: #FFFFFF;
+        background-color: $textColor;
+        transform: scale(110%);
+        transition: 0.6s;
+    }
+
 }
+
 
 .all_product:hover {
     color: #FFF;

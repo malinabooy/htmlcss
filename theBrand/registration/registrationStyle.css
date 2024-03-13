@@ -389,15 +389,28 @@
   margin-top: 20px;
   width: 167px;
   height: 50px;
-  color: #FFFFFF;
-  background-color: #F16D7F;
-  border: #F16D7F;
+  color: #F16D7F;
+  background-color: #FFFFFF;
+  border: 1px solid #F16D7F;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
   cursor: pointer;
+  transition: background-color 0.6s, transform 0.5s;
+}
+.registration__join path {
+  fill: #F16D7F;
+}
+.registration__join:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  transform: scale(110%);
+  transition: 0.6s;
+}
+.registration__join:hover path {
+  fill: #FFFFFF;
 }
 .registration__rightBlock {
   width: 652px;
